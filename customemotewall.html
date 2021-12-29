@@ -1,0 +1,75 @@
+<html>
+   <head>
+      <title>Custom Emote Wall</title>
+      <!--for Basti by lunath-->
+      <style type="text/css">
+         #background-video {
+         height: 100vh;
+         width: 100vw;
+         object-fit: cover;
+         position: fixed;
+         left: 0;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         z-index: -1;
+         }
+
+         h1, h2 {
+         color: white;
+         font-family: Trebuchet MS;
+         font-weight: bold;
+         text-align: center;
+         }
+
+         h1 {
+         font-size: 6rem;
+         margin-top: 30vh; 
+         }
+
+         h2 { 
+         font-size: 3rem; 
+         }
+
+         html {
+         overflow: auto;
+         }
+
+         html,
+         body,
+         div,
+         iframe {
+         margin: 0px;
+         padding: 0px;
+         height: 100%;
+         border: none;
+         }
+
+         iframe {
+         display: block;
+         width: 100%;
+         border: none;
+         overflow-y: auto;
+         overflow-x: hidden;
+         }
+      </style>
+   </head>
+   <body bgcolor="black">
+      <video id="background-video" autoplay loop muted>
+         <source src="LOCAL-VIDEO-PATH" 
+            type="video/mp4" 
+            marginheight="0" 
+            marginwidth="0" 
+            width="100%" 
+            height="100%" >
+      </video>
+      <iframe src="https://streamlabs.com/widgets/emote-wall?token=STREAMLABS-EMOTEWALL-TOKEN"
+         frameborder="0" 
+         marginheight="0" 
+         marginwidth="0" 
+         width="100%" 
+         height="100%" 
+         scrolling="auto">
+      </iframe>
+   </body>
+</html>
